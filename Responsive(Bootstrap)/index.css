@@ -1,0 +1,27 @@
+footer a:hover {
+    color: #FFF !important;
+    text-decoration: none !important;
+}
+#comments article header a:hover {
+     text-decoration: none !important;
+}
+/* different media query for picture part */
+@media(max-width: 550px){
+    #p1 , #p2{
+        margin: 0px !important;
+        font-size: 8px !important;
+    }
+}
+@media(551px <=width<= 750px ){
+    #p1 , #p2{
+        margin: 0px !important;
+        font-size: 10px !important;
+        }
+}
+@media(751px <=width<= 1300px ){
+    #p1 , #p2{
+        width: 100%;
+        margin: 0px !important;
+        font-size: 15px !important;
+    }
+}
