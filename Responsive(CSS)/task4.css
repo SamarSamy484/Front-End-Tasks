@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(88, 148, 238);
+}
+/* To divide the body on contents  */
+.page{
+    height: 600px;
+    width: 50%;
+    margin-left: 25%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: "nav art art" "nav side sec" "foot foot sec";
+    gap: 5px;
+    transform: rotate(45deg);
+}
+/* Style of contents */
+nav,article, aside,section,footer{
+    background-color: rgb(15, 12, 12);
+    color:beige
+} 
+
+nav{
+    grid-area: nav;
+}
+article{
+    grid-area: art;
+}
+aside{
+    grid-area: side;
+}
+section{
+    grid-area: sec;
+}
+footer{
+    grid-area: foot;
+}
+/* media query for small width */
+@media (max-width: 500px){
+    .page{
+       transform: rotate(0deg);
+       width: 100%;
+       margin-left:0% ;
+    }
+}

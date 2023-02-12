@@ -1,0 +1,46 @@
+/* Style of form */
+div {
+    margin-left:30%;
+    width: 40%;
+    height:350px;
+    margin-top: 10%;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* Style for input */
+input{
+    margin-left:5%;
+    display: block;
+    width: 90%;
+    border: none;
+    height:50px;
+}
+
+/* for vaild input*/
+input:valid{
+    border-bottom: 2px solid green;
+}
+
+/* for invaild input*/
+input:invalid{
+    border-bottom: 2px solid red;
+  
+}
+/* changeBtn */
+#btn{
+    width: 26%;
+    height: 40px;
+    margin-top: 2%;
+    margin-left: 37%;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: large;
+    background-color: rgb(65, 225, 92);
+    cursor: pointer;
+}
+span{
+    margin-left: 2%;
+}

@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+/* Style of nav */
+nav{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    height: 70px;
+    background-color: rgb(245, 231, 220);
+    top: 0;
+}   
+
+/* Stle for title */
+h1{
+    margin-top: 5%;
+    margin-left: 8%;
+    font-size: bold;
+}
+
+/* Style of navbar */
+.navbar{
+    text-align: right;
+    margin: 20px;
+    font-size: larger;
+}
+span{
+    padding: 20px;
+    cursor: pointer;
+}
+
+/*Style the pic of page  */
+.pic{
+    margin-top: 7%;
+    position: relative;
+}
+
+/*  the word on pic*/
+h2{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: grey;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    margin-top: 60px;
+    font-size: large;
+    width: 80%;
+     margin-left: 10%;
+}
+
+P{
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-left: 20px;;
+    color: rgb(97, 94, 94);
+    font-style: italic;
+}
+
+h3{
+margin-bottom: 30px;
+font-size: 25px;
+}
+
+/* style for menu part */
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    text-align: left;
+    margin: 3% 10%;
+    font-size:medium;
+}
+
+/* pi in menu */
+.men1{
+    margin-left: 20%;
+}
+
+/* in menu */
+h4{
+    letter-spacing: 2px;
+}
+
+/* form input */
+input{
+    padding: 5px;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    display: block;
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid gray;
+    height: 30px;
+}
+
+/* horizontal line */
+hr{
+    width: 80%;
+    margin-left: 10%;
+}
+
+#contact{
+    margin: 2% 3%;
+}
+/* Style send msg btn */
+button{
+    height: 40px;
+    width:12%;
+    margin: 2% 10%;
+    border: none;
+    background-color: gray;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: large;
+}
+
+

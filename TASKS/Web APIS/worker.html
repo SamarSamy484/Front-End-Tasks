@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worker</title>
+    <style>
+        /* Style of Btns */
+        button{
+            width: 16%;
+            height: 60px;
+            margin-top: 10%;
+            margin-left: 42%;
+            border-radius: 10px;
+            font-weight: bolder;
+            font-size: large;
+            background-color: rgb(35, 88, 88);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- make 2 big action in the same time -->
+    <button id="sum"> Summation</button>
+    <button id="color">Change Color</button>
+
+    <script>
+        var worker =new Worker("worker.js");
+        var summation=document.getElementById("sum");
+        var cc=document.getElementById("color");
+        // summation btn
+        summation.onclick = function() {
+            worker.postMessage("");
+        }
+        worker.onmessage = function(message) {
+            alert(message.data);
+        }
+        //change color btn
+        cc.onclick = function() {
+            if (document.body.style.background !== "yellow") {
+                document.body.style.background = " yellow";
+            } else {
+                document.body.style.background = "blue";
+            }
+        }
+    </script>
+</body>
+</html>

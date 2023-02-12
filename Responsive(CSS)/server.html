@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+div {
+    margin-left:27%;
+    width: 400px;
+    height:350px;
+    margin-top: 5%;
+    border: 1px solid black;
+}
+input{
+    margin-left:20px;
+    display: block;
+    width: 30%;
+    border: none;
+    border-bottom: 1px solid gray;
+    width:300px;
+    height:40px;
+}
+ h1{
+    margin-left:20px;
+} 
+
+input:valid{
+    border-bottom: 1px solid green;
+}
+
+input:invalid{
+    border-bottom: 2px solid red;
+  
+}
+
+#btn{
+    width: 100px;
+    height: 30px;
+    margin-top: 2%;
+    margin-left: 37%;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: large;
+    background-color: royalblue;
+    cursor: pointer;
+}
+span{
+    margin-left: 20px;
+}
+    </style>
+</head>
+<body>
+ <div>
+   <h1>Change Email Address</h1>
+   <form action="save.html" target="_blank">
+   <p> <input id="username" type="text"  required placeholder="UserName " name="user" pattern="[A-Za-z]{5}"
+    oninvalid="document.getElementById('s1').innerHTML='The required user name may only contains alphabetical characters'";/></p>
+   <span id="s1"></span>
+   <p><input id="email" type="email" required placeholder="Enter your email"  name="email" 
+    oninvalid="document.getElementById('s2').innerHTML='The required email may not include a special character than @ sign'";/> </p>
+    <span id="s2"></span>
+   <p><input id="btn" type="submit" value="Change"/></p>
+   </form> 
+   <script>
+    var btn=document.getElementById("btn");
+    btn.addEventListener('click',function(){
+        var name=document.getElementById("username").value;
+        var email=document.getElementById("email").value;
+        localStorage.setItem("username",name);
+        localStorage.setItem("email",email);
+        document.write(`<p>UserName: ${localStorage.getItem("username")}</p>`);
+        document.write(`Email: ${localStorage.getItem("email")}`);
+    })
+   </script>
+ </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+/* To divide the body on contents */
+body{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    height: 630px;
+    gap:10px;
+    text-align: center;
+    font-size: larger;
+}
+/* Style of nav  */
+nav{
+    background-color: rgb(238, 154, 44);
+    grid-column: 1/5;
+    grid-row: 1/2;
+}
+
+/* Stle of left side */
+.a1{
+    background-color: rgb(57, 65, 182);
+    grid-column: 1/2;
+    grid-row: 2/5;
+}
+
+/* Stle of right side */
+.a2{
+    background-color:  rgb(57, 65, 182);
+    grid-column: 4/5;
+    grid-row: 2/5;
+}
+
+/* Style of middle */
+article{
+    background-color: rgb(45, 47, 49);
+    grid-column: 2/4;
+    grid-row: 2/5;
+}
+
+/* Style of footer */
+footer{
+    background-color:  rgb(238, 154, 44);
+    
+    grid-column: 1/5;
+    grid-row: 5/6;
+}
+
+/* Media query for small width */
+@media (max-width: 550px){
+  .a1{
+    grid-column: 1/5;
+    grid-row: 2/3;
+}
+
+.a2{
+    grid-column: 1/5;
+    grid-row: 4/5;
+}
+
+article{
+    grid-column: 1/5;
+    grid-row: 3/4;
+}
+}

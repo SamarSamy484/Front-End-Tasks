@@ -1,0 +1,36 @@
+/* style of form */
+div {
+    margin-left:34%;
+    width: 33%;
+    height:350px;
+    margin-top: 10%;
+    border: 1px solid rgb(241, 237, 237,0.3);
+}
+
+/* Style of input */
+input{
+    margin-top: 8%;
+    margin-left: 15%;
+    display: block;
+    border: none;
+    width:70%;
+    height:50px;
+}
+
+/* Login btn */
+#btn{
+    width: 70%;
+    height: 50px;
+    margin-top: 4%;
+    margin-left: 15%;
+    font-weight: bolder;
+    font-size: large;
+    cursor: pointer;
+    border: none;
+}
+
+/* create account */
+#reg{
+    margin-left: 29%;
+    color: rgb(170, 170, 170);  
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css"/>
+</head>
+<body>
+<div>
+    <h1>Change Email Address</h1>
+    <form >
+    <p>
+        <input id="username" type="text"  required placeholder="UserName " name="user" pattern="[A-Za-z]{5}"
+        oninvalid="document.getElementById('s1').innerHTML='The required user name may only contains alphabetical characters'";/>
+    </p>
+    <span id="s1"></span>
+    <p>
+        <input id="email" type="email" required placeholder="Enter your email"  name="email" 
+        oninvalid="document.getElementById('s2').innerHTML='The required email may not include a special character than @ sign'";/>
+   </p>
+   <span id="s2"></span>
+   <p>
+    <input id="btn" type="submit" value="Change"/>
+    </p>
+   </form> 
+</div>
+</body>
+</html>
