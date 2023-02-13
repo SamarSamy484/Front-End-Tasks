@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="IM.css"/>
+</head>
+<body>
+<!-- Container for the image gallery -->
+<div class="container">
+
+  <!-- Display the images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="FB_IMG_1666564647379.jpg" style="width:100%; height: 450px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="FB_IMG_1666564650465.jpg" style="width:100%; height: 450px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="FB_IMG_1666564652594.jpg" style="width:100%; height: 450px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="IMG_20220924_164239.jpg" style="width:100%; height: 450px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="IMG_20220924_164457.jpg" style="width:100%; height: 450px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="IMG_20220926_042339.jpg" style="width:100%; height: 450px;">
+  </div>
+
+  <!-- 2 buttons for next and previous -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+  <!-- all images under the current one-->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="FB_IMG_1666564647379.jpg" style="width:100%;height: 160px;" onclick="currentSlide(1)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="FB_IMG_1666564650465.jpg" style="width:100%;height: 160px;" onclick="currentSlide(2)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="FB_IMG_1666564652594.jpg" style="width:100%;height: 160px;" onclick="currentSlide(3)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="IMG_20220924_164239.jpg" style="width:100%;height: 160px;" onclick="currentSlide(4)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="IMG_20220924_164457.jpg" style="width:100%;height: 160px;" onclick="currentSlide(5)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="IMG_20220926_042339.jpg" style="width:100%;height: 160px;" onclick="currentSlide(6)" >
+    </div>
+  </div>
+</div>
+<script src="IM.js"></script>
+</body>
+</html>
